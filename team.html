@@ -298,25 +298,5 @@
     <script src="js/main.js"></script>
     <script src="js/ekko-lightbox.js"></script>
     <script src="js/tabbis.js"></script>
-    <script>
-      var tabs = tabbis.init({
-      tabGroup: '[data-tabs]',
-      paneGroup: '[data-panes]',
-      tabActive: 'active',
-      paneActive: 'active',
-      callback: function(tab, pane) {
-      console.log(tab);
-      console.log(pane);
-      }
-      });
-    </script>
-
-    <script>
-      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-          
-    </script>
   </body>
 </html>
