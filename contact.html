@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131739750-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131739750-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Columbia China Dance">
+    <meta name="author" content="James Wang">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <title>Columbia China Dance</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-slider.css"/>
+    <script src="js/ism-2.2.min.js"></script>
+  </head>
+  <body>
+    <img style="display: none" src="assets/logo.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="./index.html">
+      <span class="d-block d-lg-none"><span class="heading">Columbia China Dance </span><span style="color: black">|</span> <span class="subheading">哥大舞韵</span></span>
+      <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/logo.jpg" alt="">
+      </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./about.html  ">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./team.html  "">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./calendar.html  ">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./gallery.html  ">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./contact.html  ">Contact Us</a>
+          </li>
+          <div id="logos">
+
+          </div>
+       
+       
+                  <li class="nav-item">
+              <a href="https://www.facebook.com/ColumbiaChinaDance/"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/cuchinadance/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCDBTCQEIVE6HYAxIGkeBJVw?view_as=subscriber"><i class="fab fa-youtube"></i>
+               <a class="trigger_popup_fricc"><i class="fab fa-weixin"></i> </a></a>
+              <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                  <div class="popupCloseButton">X</div>
+                  <img style="width: 100%" src="assets/qr.png">
+                  <p>微信公众号：CUChinaDance</p>
+                </div>
+              </div>
+            </li>
+            <br>
+      </div>
+      </div>
+      </ul>
+      </div>
+    </nav>
+   
+    <div id="contact" style="display: block; text-align: left;">
+      <center>
+        <h1 class="heading">Contact Us</h1>
+      </center>
+      <div class="bar_calendar"></div>
+      <br>
+      <div style="padding: 10px">Send us an email at <a href="mailto: cuchinadance@gmail.com">cuchinadance@gmail.com</a> or fill out the following form:</div>  
+      <form action="https://formspree.io/jameswang1279@gmail.com" method="POST" />
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="Name">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="Email"> 
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="Subject"> 
+        <label for="body">Body</label>
+        <textarea id="text" name="body" style="height:100px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script src="js/tabbis.js"></script>
+    <script>
+      var tabs = tabbis.init({
+      tabGroup: '[data-tabs]',
+      paneGroup: '[data-panes]',
+      tabActive: 'active',
+      paneActive: 'active',
+      callback: function(tab, pane) {
+      console.log(tab);
+      console.log(pane);
+      }
+      });
+    </script>
+
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+          
+    </script>
+  </body>
+</html>
