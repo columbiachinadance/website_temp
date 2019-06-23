@@ -23,12 +23,12 @@ var tabbis = (function () {
 		for( var groupIndex = 0; groupIndex < groups['tab'].length; groupIndex++ ) {
 			var tabItems = groups['tab'][groupIndex].children;
 
+
 			for( var itemIndex = 0; itemIndex < tabItems.length; itemIndex++ ) {
 				tabItems[itemIndex].addEventListener('click', fn.onClick.bind(this, groupIndex, itemIndex), false);
 
 				indexGroup = groupIndex;
 				indexItem = itemIndex;
-
 				if(!fn.hasMemory()) continue;
 				fn.setNodes(groupIndex, itemIndex);
 			}
@@ -57,7 +57,7 @@ var tabbis = (function () {
 		memory[groupIndex] = [];
 		memory[groupIndex][itemIndex] = true;
 
-		localStorage.setItem('tabbis', JSON.stringify(memory));
+		//localStorage.setItem('tabbis', JSON.stringify(memory));
 	};
 
 	fn.hasMemory = function() {
