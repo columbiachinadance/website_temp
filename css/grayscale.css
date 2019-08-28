@@ -210,14 +210,14 @@
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) { /*768 */
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) { /*992 */
   .masthead {
     height: 100vh;
     padding: 0;
@@ -281,7 +281,7 @@
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) { /*992 */
   .projects-section .featured-text {
     padding: 0 0 0 1rem;
     border-left: 0.5rem solid #64a19d;
@@ -293,7 +293,7 @@
   font-size: 90%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) { /*992 */
   .projects-section .project-text {
     padding: 5rem;
   }
