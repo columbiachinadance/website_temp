@@ -129,7 +129,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -400,4 +400,13 @@ a:focus, a:hover {
 
 footer {
   padding: 2rem 0;
+}
+
+
+@media (min-width: 1200px)
+.card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }

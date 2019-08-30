@@ -38,6 +38,7 @@
   <!-- Custom styles for this template -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <link href="css/grayscale.css" rel="stylesheet">
 </head>
@@ -211,13 +212,17 @@
   </div>
   <br>
       <!-- Featured Project Row -->
+      <center>
       <div class="col-12">
     <div class="card-deck">
       <div class="row">
-
-
         <div class="card align-items-center" style="width: 30rem;">
-  <img class="card-img-top" src="2.JPG" alt="Card image cap">
+  <!--<img class="card-img-top" src="2.JPG" alt="Card image cap">-->
+  <img class="mySlides_1" style="width:100%; height:66%" src="2.JPG">
+<img class="mySlides_1"  style="width:100%; height:66%" src="3.jpg">
+<img class="mySlides_1" style="width:100%; height:66%" src="1.JPG">
+<button class="w3-button w3-display-left" onclick="plusDivs_1(-1)" style="top: 33%;  background-color: Transparent;">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs_1(+1)" style="top: 33%; background-color: Transparent;">&#10095;</button>
   <div class="card-body">
     <h5 class="card-title">CSC Night Market</h5>
     <p class="card-text">洛水佼人 | Beauties by the Luo River</p>
@@ -226,7 +231,11 @@
 
 
 <div class="card align-items-center" style="width: 30rem;">
-  <img class="card-img-top" src="3.jpg" alt="Card image cap">
+<img class="mySlides_2" style="width:100%; height:66%" src="3.jpg">
+<img class="mySlides_2" style="width:100%; height:66%" src="2.JPG">
+<img class="mySlides_2" style="width:100%; height:66%" src="1.JPG">
+<button class="w3-button w3-display-left" onclick="plusDivs_2(-1)" style="top: 33%;  background-color: Transparent;">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs_2(+1)" style="top: 33%; background-color: Transparent;">&#10095;</button>
   <div class="card-body">
     <h5 class="card-title">CUCCSA Lunar Gala</h5>
     <p class="card-text">洛水佼人 | Beauties by the Luo River</p>
@@ -234,7 +243,11 @@
 </div>
 
 <div class="card align-items-center" style="width: 30rem;">
-  <img class="card-img-top" src="1.JPG" alt="Card image cap">
+  <img class="mySlides_3" style="width:100%; height:66%" src="1.JPG">
+  <img class="mySlides_3" style="width:100%; height:66%" src="3.jpg">
+<img class="mySlides_3" style="width:100%; height:66%" src="2.JPG">
+<button class="w3-button w3-display-left" onclick="plusDiv_3(-1)" style="top: 33%;  background-color: Transparent;">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs_3(+1)" style="top: 33%; background-color: Transparent;">&#10095;</button>
   <div class="card-body">
     <h5 class="card-title"> 《镜花水月》Castle in the Air</h5>
     <p class="card-text">秀色 | Ravishing Beauties</p>
@@ -244,6 +257,7 @@
       </div>
     </div>
   </div>
+</center>
 </div>
   </section>
 
@@ -308,6 +322,67 @@
   <script src="js/grayscale.min.js"></script>
 
   <script>
+
+var slideIndex_1 = 1;
+showDivs_1(slideIndex_1);
+
+function plusDivs_1(n) {
+  showDivs_1(slideIndex_1 += n);
+}
+
+
+function showDivs_1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides_1");
+  if (n > x.length) {slideIndex_1= 1} 
+  if (n < 1) {slideIndex_1 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+x[slideIndex_1-1].style.display = "block"; 
+}
+
+
+var slideIndex_2 = 1;
+showDivs_2(slideIndex_2);
+
+function plusDivs_2(n) {
+  showDivs_2(slideIndex_2 += n);
+}
+
+
+function showDivs_2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides_2");
+  if (n > x.length) {slideIndex_2= 1} 
+  if (n < 1) {slideIndex_2 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+x[slideIndex_2-1].style.display = "block"; 
+}
+
+var slideIndex_3 = 1;
+showDivs_3(slideIndex_3);
+
+function plusDivs_3(n) {
+  showDivs_3(slideIndex_3 += n);
+}
+
+
+function showDivs_3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides_3");
+  if (n > x.length) {slideIndex_3= 1} 
+  if (n < 1) {slideIndex_3 = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+x[slideIndex_3-1].style.display = "block"; 
+}
+
+
+
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
